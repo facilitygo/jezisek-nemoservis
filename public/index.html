@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dopis Ježíškovi – aplikace pro iPhone</title>
+<meta name="description" content="Dopis Ježíškovi – vánoční aplikace pro iPhone. Napiš Ježíškovi, co si přeješ, s obrázky a odkazy. Ježíškové si přání zamlouvají, aby nekoupili stejný dárek. Zdarma a bez reklam.">
+<meta name="theme-color" content="#0a1430">
+<meta property="og:title" content="Dopis Ježíškovi">
+<meta property="og:description" content="Vánoční aplikace pro iPhone – dopisy Ježíškovi s přáními, obrázky a odkazy. Zdarma.">
+<meta property="og:image" content="https://jezisek.nemoservis.cz/img/og.jpg">
+<meta property="og:url" content="https://jezisek.nemoservis.cz/">
+<link rel="icon" type="image/png" href="/img/favicon.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="alternate" hreflang="en" href="https://jezisek.nemoservis.cz/en/">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<canvas id="sky" aria-hidden="true"></canvas>
+<div class="garland" aria-hidden="true"></div>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/img/apple-touch-icon.png" alt=""><span>Dopis Ježíškovi</span></a>
+    <nav class="menu" aria-label="Hlavní menu">
+      <a href="/" aria-current="page">Úvod</a>
+      <a href="/navod/">Návod</a>
+      <a href="/podpora/">Podpora</a>
+      <a href="/podminky/">Podmínky</a>
+      <a href="/soukromi/">Soukromí</a>
+      <a href="/en/" lang="en">EN</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <img class="icon" src="/img/icon-512.png" width="148" height="148" alt="Ikona aplikace Dopis Ježíškovi – okřídlený dopis letí pod betlémskou hvězdou">
+    <h1>Dopis Ježíškovi</h1>
+    <p class="lead">Napiš Ježíškovi, co si přeješ – a pošli mu dopis rovnou z iPhonu.</p>
+    <p class="sub">Přání s obrázky, odkazy a velikostmi. Ježíškové (máma, táta, babička…) dopisy čtou a zamlouvají si dárky, aby nekoupili stejný. A hodný člověk se o tom nic nedozví.</p>
+    <div class="badges">
+      <span class="pill">🎁 Zdarma</span>
+      <span class="pill">🚫 Bez reklam</span>
+      <span class="pill">📱 iPhone · iOS 17+</span>
+    </div>
+    <p><a class="btn" href="/navod/">Jak začít – návod</a></p>
+  </section>
+
+  <section>
+    <div class="card snowcap countdown" data-countdown>
+      <div>
+        <div class="label">Do Štědrého dne zbývá</div>
+        <div><span class="num">–</span> <span class="unit"></span></div>
+      </div>
+      <div style="font-size:52px" aria-hidden="true">🕯️🕯️🕯️🕯️</div>
+    </div>
+  </section>
+
+  <section id="jak-to-funguje" class="steps">
+    <h2>Jak to funguje</h2>
+    <p class="section-sub">Ježíšek i hodní lidé mají každý svůj účet a svůj vánoční svět.</p>
+    <div class="grid">
+      <div class="card"><h3>Ježíšek pozve své hodné</h3><p>Ježíšek si v aplikaci pošle pozvánku na e-mail hodného – nebo dítěti bez vlastního telefonu rovnou založí účet.</p></div>
+      <div class="card"><h3>Hodný napíše dopis</h3><p>Přání, proč si ho zaslouží, odkazy do obchodů, obrázky a velikosti. Pak dopis zalepí pečetí a anděl ho odnese ke hvězdě.</p></div>
+      <div class="card"><h3>Ježíšek složí skládačku a čte</h3><p>Než se dopis otevře, Ježíšek poskládá puzzle z 12 dílků. Pak si zamluví, co obstará, a ostatní Ježíškové to uvidí.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="split">
+      <div class="paper" aria-label="Ukázka dopisu">
+        <div class="hello">Milý Ježíšku,</div>
+        letos jsem byla moc hodná, a proto bych si přála:
+        <ul>
+          <li>brusle (vel. 34)</li>
+          <li>knížku o koních</li>
+          <li>sáňky pro brášku 🛷</li>
+        </ul>
+        <div class="sign">Tvoje Anička</div>
+      </div>
+      <div>
+        <h2 style="text-align:left">Dopis jako z papíru</h2>
+        <p>Dopis se píše na papír s linkami, oslovení krasopisem. Ke každému přání jde přidat důvod, odkazy s náhledem, fotky i vlastní velikost.</p>
+        <p>Dokud si ho žádný Ježíšek nepřečte, jde odeslaný dopis ještě upravit. Autor vidí, kdo už dopis četl.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pro hodné i pro Ježíšky</h2>
+    <p class="section-sub">Hodný má zimní noc s vesničkou a polární září, Ježíšek nebe nad mraky s betlémskou hvězdou.</p>
+    <div class="grid">
+      <div class="card snowcap"><div class="emoji">✉️</div><h3>Dopisy s přáními</h3><p>Přání, důvody, odkazy, obrázky a velikosti – od bot po lyže.</p></div>
+      <div class="card snowcap"><div class="emoji">👨‍👩‍👧</div><h3>Víc Ježíšků</h3><p>Máma, táta, babička… Každý Ježíšek vidí jen dopisy svých hodných.</p></div>
+      <div class="card snowcap"><div class="emoji">🏷️</div><h3>Zamlouvání dárků</h3><p>„Obstarám já“ – aby dva Ježíškové nekoupili stejný dárek. Hodný o tom nic neví, překvapení zůstane.</p></div>
+      <div class="card snowcap"><div class="emoji">🧩</div><h3>Skládačka</h3><p>Ježíšek musí dopis nejdřív složit z dílků – z obrázku, který vybral hodný.</p></div>
+      <div class="card snowcap"><div class="emoji">📱</div><h3>Víc účtů v telefonu</h3><p>Sourozenci se na jednom iPhonu přepínají jedním klepnutím. Účet Ježíška chrání Face ID.</p></div>
+      <div class="card snowcap"><div class="emoji">🔔</div><h3>Vánoční kouzla</h3><p>Zvonečky, rolničky saní, koleda z hrací skříňky. Zatřes telefonem a zachumelí se.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="split">
+      <img class="puzzle" src="/img/skladacka.jpg" width="420" height="420" loading="lazy" alt="Vánoční obrázek na skládačku z aplikace">
+      <div>
+        <h2 style="text-align:left">Zdarma, bez reklam</h2>
+        <p>Aplikace je zdarma, nemá reklamy ani nákupy v aplikaci a nesleduje vás. Dopisy vidí jen jejich autor a Ježíškové, které si sám přijal.</p>
+        <p><a class="btn secondary" href="/soukromi/">Jak chráníme soukromí</a></p>
+        <p>Potřebujete pomoct? <a href="/podpora/">Podpora</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<img class="landscape" src="/img/krajina.svg" alt="" aria-hidden="true">
+<footer>
+  <div class="wrap">
+    <span>© 2026 NEMOSERVIS Praha s.r.o. · Dopis Ježíškovi</span>
+    <nav aria-label="Patička"><a href="/navod/">Návod</a><a href="/podpora/">Podpora</a><a href="/podminky/">Podmínky použití</a><a href="/soukromi/">Ochrana soukromí</a><a href="mailto:jezisek@nemoservis.cz">jezisek@nemoservis.cz</a></nav>
+  </div>
+</footer>
+<script src="/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  // Statický web aplikace Dopis Ježíškovi – Cloudflare Workers (static assets), bez buildu.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "jezisek-nemoservis",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./public",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  // Zóna nemoservis.cz musí být ve stejném Cloudflare účtu – DNS záznam i certifikát vytvoří Cloudflare sám.
+  "routes": [
+    { "pattern": "jezisek.nemoservis.cz", "custom_domain": true }
+  ]
+}

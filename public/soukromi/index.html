@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ochrana soukromí – Dopis Ježíškovi</title>
+<meta name="description" content="Zásady ochrany osobních údajů aplikace Dopis Ježíškovi pro iPhone.">
+<meta name="theme-color" content="#0a1430">
+<link rel="icon" type="image/png" href="/img/favicon.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="alternate" hreflang="en" href="https://jezisek.nemoservis.cz/en/privacy/">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<canvas id="sky" aria-hidden="true"></canvas>
+<div class="garland" aria-hidden="true"></div>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/img/apple-touch-icon.png" alt=""><span>Dopis Ježíškovi</span></a>
+    <nav class="menu" aria-label="Hlavní menu">
+      <a href="/">Úvod</a>
+      <a href="/navod/">Návod</a>
+      <a href="/podpora/">Podpora</a>
+      <a href="/podminky/">Podmínky</a>
+      <a href="/soukromi/" aria-current="page">Soukromí</a>
+      <a href="/en/privacy/" lang="en">EN</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap doc">
+  <h1>Ochrana soukromí</h1>
+  <p class="meta">Platné od 9. listopadu 2026</p>
+
+  <div class="card snowcap">
+    <h2>Stručně</h2>
+    <ul>
+      <li>Sbíráme jen to, co aplikace potřebuje: účet (jméno, e-mail, heslo) a dopisy, které napíšete.</li>
+      <li>Dopisy vidíte vy a Ježíškové, které jste si sami přijali. Nikomu dalšímu je neukazujeme ani neprodáváme.</li>
+      <li>Žádné reklamy, žádné sledování, žádná analytika třetích stran.</li>
+      <li>Účet i všechna data můžete kdykoli nechat smazat.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>1. Správce údajů</h2>
+    <p>NEMOSERVIS Praha s.r.o., IČO 26122375. Kontakt pro vše, co se týká osobních údajů: <a href="mailto:jezisek@nemoservis.cz">jezisek@nemoservis.cz</a>.</p>
+
+    <h2>2. Jaké údaje zpracováváme</h2>
+    <div class="table-scroll">
+    <table>
+      <tr><th>Údaje</th><th>K čemu</th></tr>
+      <tr><td>Jméno, e-mail, heslo (ukládáme jen jeho bezpečný otisk – bcrypt), role (hodný / Ježíšek)</td><td>Vytvoření účtu a přihlášení</td></tr>
+      <tr><td>Dopisy: text, přání, důvody, odkazy, velikosti (např. výška, velikost bot)</td><td>Hlavní funkce aplikace – doručení dopisu Ježíškům</td></tr>
+      <tr><td>Obrázky, které k přáním nebo na skládačku sami vyberete</td><td>Zobrazení v dopisu. Aplikace má přístup jen k fotkám, které vyberete, ne k celé knihovně.</td></tr>
+      <tr><td>Pozvánky a propojení (e-mail pozvaného, kdo koho přijal)</td><td>Aby Ježíšek viděl dopisy jen svých hodných</td></tr>
+      <tr><td>Přečtení dopisu a zamluvení dárků</td><td>Koordinace mezi Ježíšky. Hodnému se údaje o zamlouvání vůbec neposílají.</td></tr>
+      <tr><td>Technické záznamy serveru (IP adresa, čas požadavku)</td><td>Bezpečnost a řešení chyb, uchováváme krátce (nejvýš 30 dní)</td></tr>
+    </table>
+    </div>
+    <p>Nezpracováváme polohu, kontakty, reklamní identifikátory ani zdravotní údaje. Nepoužíváme reklamní ani analytické nástroje a nesledujeme vás napříč aplikacemi a weby.</p>
+
+    <h2>3. Co zůstává jen v telefonu</h2>
+    <ul>
+      <li>Přihlašovací token je uložený v zabezpečené klíčence iPhonu (Keychain).</li>
+      <li>Face ID / Touch ID ověřuje přímo iOS. Biometrické údaje k nám nikdy nejdou.</li>
+      <li>Nastavení hudby a zvuků.</li>
+    </ul>
+
+    <h2>4. Náhledy odkazů</h2>
+    <p>Když k přání přidáte odkaz (třeba do e-shopu), aplikace si z telefonu stáhne název a obrázek stránky, aby ukázala náhled. Daný web při tom vidí běžné údaje o požadavku (např. IP adresu). Na to, co si web zaznamená, nemáme vliv.</p>
+
+    <h2>5. Právní základ</h2>
+    <p>Údaje zpracováváme, protože je potřebujeme k poskytování aplikace, kterou používáte (plnění smlouvy, čl. 6 odst. 1 písm. b) GDPR), a technické záznamy z oprávněného zájmu na bezpečnosti služby (čl. 6 odst. 1 písm. f) GDPR).</p>
+
+    <h2>6. Děti</h2>
+    <p>Aplikaci používají i děti. U dětí mladších 15 let musí s používáním souhlasit rodič nebo zákonný zástupce – typicky tak, že dítěti účet sám založí jako Ježíšek. Od dětí nechceme víc údajů, než je nutné (jméno nebo přezdívka a e-mail pro přihlášení). Rodič může kdykoli požádat o výpis nebo smazání údajů dítěte.</p>
+
+    <h2>7. Kdo údaje vidí</h2>
+    <ul>
+      <li><strong>Ježíškové, které jste přijali</strong> – vidí vaše odeslané dopisy, jméno a e-mail. Rozepsané dopisy nevidí nikdo kromě vás.</li>
+      <li><strong>Poskytovatel serveru (hosting)</strong> – data jsou uložena na serveru v Evropské unii, který pro nás zajišťuje hostingový poskytovatel jako zpracovatel. Nemá právo údaje používat pro sebe.</li>
+      <li><strong>Úřady</strong> – jen pokud to vyžaduje zákon.</li>
+    </ul>
+    <p>Údaje neprodáváme a nepředáváme mimo EU.</p>
+
+    <h2>8. Jak dlouho údaje uchováváme</h2>
+    <p>Dokud máte účet. Smazaný koncept dopisu nebo odebraný obrázek mažeme hned. Když požádáte o zrušení účtu, smažeme do 30 dnů účet, dopisy, obrázky, pozvánky i zamluvení. Zálohy se přepisují nejpozději do dalších 30 dnů.</p>
+
+    <h2 id="smazani">9. Smazání účtu</h2>
+    <p>Napište na <a href="mailto:jezisek@nemoservis.cz?subject=Smaz%C3%A1n%C3%AD%20%C3%BA%C4%8Dtu">jezisek@nemoservis.cz</a> z e-mailu, se kterým jste se registrovali, že chcete účet smazat. Potvrdíme vám, až bude hotovo. Odhlášení v aplikaci účet nesmaže – jen ho odebere z telefonu.</p>
+
+    <h2>10. Vaše práva</h2>
+    <p>Máte právo na přístup ke svým údajům, jejich opravu, výmaz, omezení zpracování, přenositelnost a vznést námitku. Stačí napsat na <a href="mailto:jezisek@nemoservis.cz">jezisek@nemoservis.cz</a>. Pokud se vám nebude líbit, jak jsme vaši žádost vyřídili, můžete podat stížnost u Úřadu pro ochranu osobních údajů (<a href="https://uoou.gov.cz" rel="noopener">uoou.gov.cz</a>).</p>
+
+    <h2>11. Zabezpečení</h2>
+    <p>Komunikace se serverem je šifrovaná (HTTPS), hesla ukládáme jen jako otisk (bcrypt), přístup k dopisům a obrázkům kontroluje server u každého požadavku.</p>
+
+    <h2>12. Tento web</h2>
+    <p>Web jezisek.nemoservis.cz nepoužívá cookies ani analytiku a nenačítá nic od třetích stran. Běží na síti Cloudflare, která kvůli bezpečnosti a doručení stránky krátce zpracovává technické údaje (např. IP adresu).</p>
+
+    <h2>13. Změny</h2>
+    <p>Když zásady podstatně změníme, upozorníme vás v aplikaci nebo e-mailem. Aktuální znění je vždy na této stránce.</p>
+  </div>
+</main>
+
+<img class="landscape" src="/img/krajina.svg" alt="" aria-hidden="true">
+<footer>
+  <div class="wrap">
+    <span>© 2026 NEMOSERVIS Praha s.r.o. · Dopis Ježíškovi</span>
+    <nav aria-label="Patička"><a href="/navod/">Návod</a><a href="/podpora/">Podpora</a><a href="/podminky/">Podmínky použití</a><a href="/soukromi/">Ochrana soukromí</a><a href="mailto:jezisek@nemoservis.cz">jezisek@nemoservis.cz</a></nav>
+  </div>
+</footer>
+<script src="/script.js" defer></script>
+</body>
+</html>
