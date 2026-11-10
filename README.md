@@ -3,6 +3,8 @@
 Web aplikace **Dopis Ježíškovi** pro iPhone – úvod, návod, podpora, podmínky použití a ochrana soukromí (česky i anglicky).
 Čisté statické HTML/CSS/JS bez buildu, hostované na Cloudflare Workers (static assets).
 
+Aplikace v App Store: https://apps.apple.com/cz/app/dopis-je%C5%BE%C3%AD%C5%A1kovi/id6832338802 (vydáno 10. 11. 2026). Verze pro Android se připravuje.
+
 ## Adresy pro App Store Connect
 
 | Pole v App Store Connect | URL |
